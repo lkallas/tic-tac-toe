@@ -1,0 +1,31 @@
+#game {
+    display: inline-block;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid-col {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background-color: #f9f8f8;
+    border-radius: 3px;
+    margin: 3px;
+    border: 1px solid #bebebe;
+    font-size: 48px;
+    font-family: helvetica;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#state {
+    font-weight: bolder;
+}

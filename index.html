@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <title>Trips Traps Trull</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta name="description" content="Trips Traps Trull" />
+    <meta name="keywords" content="TicTacToe, Javascript, Game" />
+    <meta name="author" content="Lennar Kallas" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Trips Traps Trull" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lennar.eu/ttt/" />
+    <meta property="og:image" content="https://lennar.eu/ttt/img/tictactoe.png" />
+    <meta property="og:description" content="Lihtne vanakooli mäng trips-traps-trull." />
+    <meta property="og:locale" content="et_EE" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/tictactoe.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container text-center">
+
+        <header class="mt-4">
+            <h1 class="display-4">Trips Traps Trull</h1>
+        </header>
+
+        <noscript>
+            <div class="alert alert-danger" style="width: fit-content; margin: 30px auto;">
+                Rakenduse korrektseks toimimiseks lubage <strong>Javascript!</strong>
+            </div>
+        </noscript>
+
+        <div id="game" class="mt-4 mb-4">
+            <div id="result" class="alert alert-success hidden">
+                <span id="state"></span> <span id="explanation"></span>
+            </div>
+
+            <table id="game-board">
+                <tr class="grid-row">
+                    <td id="00" class="grid-col"></td>
+                    <td id="01" class="grid-col"></td>
+                    <td id="02" class="grid-col"></td>
+                </tr>
+                <tr class="grid-row">
+                    <td id="10" class="grid-col"></td>
+                    <td id="11" class="grid-col"></td>
+                    <td id="12" class="grid-col"></td>
+                </tr>
+                <tr class="grid-row">
+                    <td id="20" class="grid-col"></td>
+                    <td id="21" class="grid-col"></td>
+                    <td id="22" class="grid-col"></td>
+                </tr>
+            </table>
+
+            <div class="mt-4">
+                <button type="button" class="btn btn-primary btn-block hidden" id="start-game-btn">Uuesti</button>
+            </div>
+
+            <div class="mt-4 mb-6">
+                <label for="ai-level">Vastasmängija tase</label>
+                <input id="ai-level" class="custom-range" type="range" min="0" max="2" step="1" value="1">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/tictactoe.js" type="text/javascript"></script>
+</body>
+
+</html>
